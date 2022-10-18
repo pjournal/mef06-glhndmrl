@@ -6,6 +6,7 @@ output: html_document
 
 # About Me
 Hello everyone. I am Gülhan and I am currently working as a mathematics teacher. I have a mathematics education undergraduate degree from Boğaziçi University. I started to interest data as a hobby. In my trip of data, there were several areas to learn. One of them was Python which is a computer language to analyze data. Last February, I started the "100 Days of Code: The Complete Python Pro Bootcamp for 2022" certification program on Udemy. In addition to Python, HTML and CSS are also explained in the training. I was taking the training for a few hours every day after work. As the days progressed in the training, I started to enjoy it more and I spent 4-5 hours each evening and completed the training. Then, I started different training courses on data analytics on Udemy. I started two different courses, first in the statistics section and then in the field of SQL to improve my knowledge in both data extraction and analysis. As time passed, I was sure that I should do this job. However, after 5 years of teaching experience and because I do not have an academic background in data, I decided to pursue a master's degree. So that's why I'm here :)
+
 Here is my [Linkedin](https://www.linkedin.com/in/g%C3%BClhan-demirel-75a026bb/) profile
 
 
@@ -21,7 +22,7 @@ Here are the steps:
 ## 1-Creating your career with R – data science based jobs!
 It indicates that your industry and geographical location are the crucial factors that affect your career. That's why a person who wants to improve modern data analytics skills like Hadoop, Weka, Natural Language Processing or Machine Learning should be in the countries that is open to new things. However, if you are living in a conservative country, SQL helps you to find a job. It says that R is the best way to start data based career and it should be supported by some other programs like SQL and Hadoop.
 
-[Post Link:](http://r-tutorials.com/creating-your-career-with-r-data-science-based-jobs/)
+[Post Link](http://r-tutorials.com/creating-your-career-with-r-data-science-based-jobs/)
 
 ## 2-Top Job Boards for R users to take your career to the next level!
 The post says that R is one of the most important programming languages for Data Science applications. According to post, R is used for data manipulation, business analytics, machine learning algorithms and data visualization techniques. 
@@ -35,7 +36,7 @@ Monster
 Naukri
 Timesjobs
 
-[Post Link:](https://www.r-users.com/blog/)
+[Post Link](https://www.r-users.com/blog/)
 
 ## 3- Three Different Ways in How to Store Your Datasets in R
 data.frame, data.table and data_frame are the common ways to store data in R. 
@@ -53,7 +54,7 @@ sapply(mydf, class)
 data.table saves time and helps to reduce errors because it is manipulated with less code and function calls. It has own structure like SQL.
 Example:
 ```{r}
-library(data.table)
+library(data.table,warn.conflicts = FALSE)
 mytable = data.table(Names = c("Paul", "Kim", "Nora", "Sue", "Paul", "Kim"),
                   Classes = c("A", "A", "B", "B", "B", "C"),
                   Points = rnorm(2)) 
@@ -61,15 +62,17 @@ mytable
 sapply(mytable, class)
 ```
 
-If you are using data_frame, you need columns of equal length. If not so, you will get an error messagge.
+If you are using data_frame, you need columns of equal length. If not so, you will get an error messagge. 
+
+After I run the code I got an error message that says "you should use tibble() instead of data_frame()". So that is why I used tibble() in the following example.
 Example:
 ```{r}
-library(dplyr)
-my_df = data_frame(Names = c("Paul", "Kim", "Nora", "Sue", "Paul", "Kim"),
+library(tibble)
+my_df = tibble(Names = c("Paul", "Kim", "Nora", "Sue", "Paul", "Kim"),
                   Classes = c("A", "A", "B", "B", "B", "C"),
                   Points = rnorm(6)) 
 my_df                  
 sapply(my_df, class)
 
 ```
-[Post Link:](http://r-tutorials.com/different-ways-store-datasets-r/)
+[Post Link](http://r-tutorials.com/different-ways-store-datasets-r/)
