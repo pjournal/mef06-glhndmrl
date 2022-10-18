@@ -37,7 +37,39 @@ Timesjobs
 
 [Post Link:](https://www.r-users.com/blog/)
 
+## 3- Three Different Ways in How to Store Your Datasets in R
+data.frame, data.table and data_frame are the common ways to store data in R. 
 
+data.frame is an internal package that is already in your computer. The drawback about data.frame is that strings are imported as factor. If you look at the example below, you can see the Names and Classes columns are imported as factor.
+Example:
 ```{r}
+mydf = data.frame(Names = c("Paul", "Kim", "Nora", "Sue", "Paul", "Kim"),
+                  Classes = c("A", "A", "B", "B", "B", "C"),
+                  Points = rnorm(2)) 
+mydf
+sapply(mydf, class)
+```
+
+data.table saves time and helps to reduce errors because it is manipulated with less code and function calls. It has own structure like SQL.
+Example:
+```{r}
+library(data.table)
+mytable = data.table(Names = c("Paul", "Kim", "Nora", "Sue", "Paul", "Kim"),
+                  Classes = c("A", "A", "B", "B", "B", "C"),
+                  Points = rnorm(2)) 
+mytable 
+sapply(mytable, class)
+```
+
+If you are using data_frame, you need columns of equal length. If not so, you will get an error messagge.
+Example:
+```{r}
+library(dplyr)
+my_df = data_frame(Names = c("Paul", "Kim", "Nora", "Sue", "Paul", "Kim"),
+                  Classes = c("A", "A", "B", "B", "B", "C"),
+                  Points = rnorm(6)) 
+my_df                  
+sapply(my_df, class)
 
 ```
+[Post Link:](http://r-tutorials.com/different-ways-store-datasets-r/)
