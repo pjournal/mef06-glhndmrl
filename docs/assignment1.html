@@ -2,20 +2,25 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.38">
+<meta name="generator" content="quarto-1.1.189">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2022-10-01">
+<meta name="dcterms.date" content="2022-10-17">
 
-<title>Gülhan Demirel Dilek's Progress Journal - 1&nbsp; Assignment 1</title>
+<title>Gülhan Demirel Dilek’s Progress Journal - 1&nbsp; Assignment 1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-span.underline{text-decoration: underline;}
-div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
@@ -54,7 +59,7 @@ code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
 code span.at { color: #7d9029; } /* Attribute */
 code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
+code span.bu { color: #008000; } /* BuiltIn */
 code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4070a0; } /* Char */
 code span.cn { color: #880000; } /* Constant */
@@ -67,7 +72,7 @@ code span.er { color: #ff0000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #40a070; } /* Float */
 code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
+code span.im { color: #008000; font-weight: bold; } /* Import */
 code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #007020; font-weight: bold; } /* Keyword */
 code span.op { color: #666666; } /* Operator */
@@ -141,7 +146,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Gülhan Demirel Dilek's Progress Journal</a> 
+      <a href="./">Gülhan Demirel Dilek’s Progress Journal</a> 
         <div class="sidebar-tools-main">
     <a href="https://github.com/pjournal/gh-pages-quarto-template" title="Source Code" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
     <a href="" title="Share" id="sidebar-tool-dropdown-0" class="sidebar-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-share"></i></a>
@@ -184,7 +189,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#about-me" id="toc-about-me" class="nav-link active" data-scroll-target="#about-me"><span class="toc-section-number">2</span>  About Me</a></li>
+  <li><a href="#rstudioconf2022" id="toc-rstudioconf2022" class="nav-link" data-scroll-target="#rstudioconf2022"><span class="toc-section-number">3</span>  rstudio::conf(2022)</a>
+  <ul class="collapse">
+  <li><a href="#garbage-data-and-what-to-do-about-them-by-jim-kloet" id="toc-garbage-data-and-what-to-do-about-them-by-jim-kloet" class="nav-link" data-scroll-target="#garbage-data-and-what-to-do-about-them-by-jim-kloet"><span class="toc-section-number">3.1</span>  Garbage Data, And What To Do About Them by Jim Kloet</a></li>
+  </ul></li>
+  <li><a href="#r-posts" id="toc-r-posts" class="nav-link" data-scroll-target="#r-posts"><span class="toc-section-number">4</span>  3-R Posts</a>
+  <ul class="collapse">
+  <li><a href="#creating-your-career-with-r-data-science-based-jobs" id="toc-creating-your-career-with-r-data-science-based-jobs" class="nav-link" data-scroll-target="#creating-your-career-with-r-data-science-based-jobs"><span class="toc-section-number">4.1</span>  1-Creating your career with R – data science based jobs!</a></li>
+  <li><a href="#top-job-boards-for-r-users-to-take-your-career-to-the-next-level" id="toc-top-job-boards-for-r-users-to-take-your-career-to-the-next-level" class="nav-link" data-scroll-target="#top-job-boards-for-r-users-to-take-your-career-to-the-next-level"><span class="toc-section-number">4.2</span>  2-Top Job Boards for R users to take your career to the next level!</a></li>
+  <li><a href="#three-different-ways-in-how-to-store-your-datasets-in-r" id="toc-three-different-ways-in-how-to-store-your-datasets-in-r" class="nav-link" data-scroll-target="#three-different-ways-in-how-to-store-your-datasets-in-r"><span class="toc-section-number">4.3</span>  3- Three Different Ways in How to Store Your Datasets in R</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -202,7 +223,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">October 1, 2022</p>
+      <p class="date">October 17, 2022</p>
     </div>
   </div>
     
@@ -211,17 +232,127 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header>
 
-<p>This is a template example qmd output page. You may see an example R code below.</p>
+<section id="about-me" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> About Me</h1>
+<p>Hello everyone. I am Gülhan and I am currently working as a mathematics teacher. I have a mathematics education undergraduate degree from Boğaziçi University. I started to interest data as a hobby. In my trip of data, there were several areas to learn. One of them was Python which is a computer language to analyze data. Last February, I started the “100 Days of Code: The Complete Python Pro Bootcamp for 2022” certification program on Udemy. In addition to Python, HTML and CSS are also explained in the training. I was taking the training for a few hours every day after work. As the days progressed in the training, I started to enjoy it more and I spent 4-5 hours each evening and completed the training. Then, I started different training courses on data analytics on Udemy. I started two different courses, first in the statistics section and then in the field of SQL to improve my knowledge in both data extraction and analysis. As time passed, I was sure that I should do this job. However, after 5 years of teaching experience and because I do not have an academic background in data, I decided to pursue a master’s degree. So that’s why I’m here :) Here is my <a href="https://www.linkedin.com/in/g%C3%BClhan-demirel-75a026bb/">Linkedin</a> profile</p>
+</section>
+<section id="rstudioconf2022" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> rstudio::conf(2022)</h1>
+<section id="garbage-data-and-what-to-do-about-them-by-jim-kloet" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="garbage-data-and-what-to-do-about-them-by-jim-kloet"><span class="header-section-number">3.1</span> Garbage Data, And What To Do About Them by Jim Kloet</h2>
+<p>This video is about bad data. According to video bad data is the data that cannot be used for analysis or decision making. It identifies the challenges that you face while dealing with garbage data and suggest a framework to examine the bad data. Here are the steps: 1. Identify the garbage data: They are not usefull for the things you want to do, but maybe they are usefull for other stuff. You need to decide. If you chose none of them, you can destroy it. 2. Identify the costs of garbage data: Some costs are unavoidable and some costs are avoidable, but these can be catastrophic. 3. Take action when you see garbage data: There are options like being honest to your stakehoulders and being emphatatic to your stakehoulders to continue to have stakehoulders.</p>
+</section>
+</section>
+<section id="r-posts" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> 3-R Posts</h1>
+<section id="creating-your-career-with-r-data-science-based-jobs" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="creating-your-career-with-r-data-science-based-jobs"><span class="header-section-number">4.1</span> 1-Creating your career with R – data science based jobs!</h2>
+<p>It indicates that your industry and geographical location are the crucial factors that affect your career. That’s why a person who wants to improve modern data analytics skills like Hadoop, Weka, Natural Language Processing or Machine Learning should be in the countries that is open to new things. However, if you are living in a conservative country, SQL helps you to find a job. It says that R is the best way to start data based career and it should be supported by some other programs like SQL and Hadoop.</p>
+<p><a href="http://r-tutorials.com/creating-your-career-with-r-data-science-based-jobs/">Post Link:</a></p>
+</section>
+<section id="top-job-boards-for-r-users-to-take-your-career-to-the-next-level" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="top-job-boards-for-r-users-to-take-your-career-to-the-next-level"><span class="header-section-number">4.2</span> 2-Top Job Boards for R users to take your career to the next level!</h2>
+<p>The post says that R is one of the most important programming languages for Data Science applications. According to post, R is used for data manipulation, business analytics, machine learning algorithms and data visualization techniques. Here are some job boards that offers jobs in the fields of data science with R programming skills: R-users.com Dice CareerBuilder LinkedIn Indeed Monster Naukri Timesjobs</p>
+<p><a href="https://www.r-users.com/blog/">Post Link:</a></p>
+</section>
+<section id="three-different-ways-in-how-to-store-your-datasets-in-r" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="three-different-ways-in-how-to-store-your-datasets-in-r"><span class="header-section-number">4.3</span> 3- Three Different Ways in How to Store Your Datasets in R</h2>
+<p>data.frame, data.table and data_frame are the common ways to store data in R.</p>
+<p>data.frame is an internal package that is already in your computer. The drawback about data.frame is that strings are imported as factor. If you look at the example below, you can see the Names and Classes columns are imported as factor. Example:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1</span>)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>vec1 <span class="ot">&lt;-</span> <span class="fu">sample</span>(LETTERS,<span class="dv">5</span>)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">paste0</span>(vec1,<span class="at">collapse=</span><span class="st">""</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>mydf <span class="ot">=</span> <span class="fu">data.frame</span>(<span class="at">Names =</span> <span class="fu">c</span>(<span class="st">"Paul"</span>, <span class="st">"Kim"</span>, <span class="st">"Nora"</span>, <span class="st">"Sue"</span>, <span class="st">"Paul"</span>, <span class="st">"Kim"</span>),</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>                  <span class="at">Classes =</span> <span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"B"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>),</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>                  <span class="at">Points =</span> <span class="fu">rnorm</span>(<span class="dv">2</span>)) </span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>mydf</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "YDGAB"</code></pre>
+<pre><code>  Names Classes    Points
+1  Paul       A 0.5236442
+2   Kim       A 0.4496056
+3  Nora       B 0.5236442
+4   Sue       B 0.4496056
+5  Paul       B 0.5236442
+6   Kim       C 0.4496056</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sapply</span>(mydf, class)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>      Names     Classes      Points 
+"character" "character"   "numeric" </code></pre>
 </div>
 </div>
+<p>data.table saves time and helps to reduce errors because it is manipulated with less code and function calls. It has own structure like SQL. Example:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(data.table)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>mytable <span class="ot">=</span> <span class="fu">data.table</span>(<span class="at">Names =</span> <span class="fu">c</span>(<span class="st">"Paul"</span>, <span class="st">"Kim"</span>, <span class="st">"Nora"</span>, <span class="st">"Sue"</span>, <span class="st">"Paul"</span>, <span class="st">"Kim"</span>),</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>                  <span class="at">Classes =</span> <span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"B"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>),</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>                  <span class="at">Points =</span> <span class="fu">rnorm</span>(<span class="dv">2</span>)) </span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>mytable </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Names Classes    Points
+1:  Paul       A 0.9237846
+2:   Kim       A 0.4828936
+3:  Nora       B 0.9237846
+4:   Sue       B 0.4828936
+5:  Paul       B 0.9237846
+6:   Kim       C 0.4828936</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sapply</span>(mytable, class)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>      Names     Classes      Points 
+"character" "character"   "numeric" </code></pre>
+</div>
+</div>
+<p>If you are using data_frame, you need columns of equal length. If not so, you will get an error messagge. Example:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'dplyr'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:data.table':
+
+    between, first, last</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:stats':
+
+    filter, lag</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>my_df <span class="ot">=</span> <span class="fu">data_frame</span>(<span class="at">Names =</span> <span class="fu">c</span>(<span class="st">"Paul"</span>, <span class="st">"Kim"</span>, <span class="st">"Nora"</span>, <span class="st">"Sue"</span>, <span class="st">"Paul"</span>, <span class="st">"Kim"</span>),</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>                  <span class="at">Classes =</span> <span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"B"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>),</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>                  <span class="at">Points =</span> <span class="fu">rnorm</span>(<span class="dv">6</span>)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: `data_frame()` was deprecated in tibble 1.1.0.
+ℹ Please use `tibble()` instead.</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>my_df                  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 3
+  Names Classes Points
+  &lt;chr&gt; &lt;chr&gt;    &lt;dbl&gt;
+1 Paul  A       -0.459
+2 Kim   A       -0.745
+3 Nora  B        1.14 
+4 Sue   B        0.689
+5 Paul  B        0.611
+6 Kim   C        0.469</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sapply</span>(my_df, class)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>      Names     Classes      Points 
+"character" "character"   "numeric" </code></pre>
+</div>
+</div>
+<p><a href="http://r-tutorials.com/different-ways-store-datasets-r/">Post Link:</a></p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -293,7 +424,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      let href = ref.getAttribute('href');
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);

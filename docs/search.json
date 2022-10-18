@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "[STUDENT/GROUP NAME] Progress Journal",
+    "title": "Gülhan Demirel Dilek’s Progress Journal",
     "section": "",
-    "text": "This progress journal covers [STUDENT NAME SURNAME / PROJECT GROUP NAME]’s work during their term at BDA 503 Fall 2022.\nEach section is an assignment or an individual work."
+    "text": "This progress journal covers Gülhan Demirel Dilek / Time and Space’s work during their term at BDA 503 Fall 2022(https://mef-bda503.github.io/fall22/).\nEach section is an assignment or an individual work."
   },
   {
     "objectID": "intro.html",
@@ -32,6 +32,34 @@
     "href": "assignment1.html",
     "title": "1  Assignment 1",
     "section": "",
-    "text": "set.seed(1)\nvec1 <- sample(LETTERS,5)\npaste0(vec1,collapse=\"\")\n\n[1] \"YDGAB\""
+    "text": "Hello everyone. I am Gülhan and I am currently working as a mathematics teacher. I have a mathematics education undergraduate degree from Boğaziçi University. I started to interest data as a hobby. In my trip of data, there were several areas to learn. One of them was Python which is a computer language to analyze data. Last February, I started the “100 Days of Code: The Complete Python Pro Bootcamp for 2022” certification program on Udemy. In addition to Python, HTML and CSS are also explained in the training. I was taking the training for a few hours every day after work. As the days progressed in the training, I started to enjoy it more and I spent 4-5 hours each evening and completed the training. Then, I started different training courses on data analytics on Udemy. I started two different courses, first in the statistics section and then in the field of SQL to improve my knowledge in both data extraction and analysis. As time passed, I was sure that I should do this job. However, after 5 years of teaching experience and because I do not have an academic background in data, I decided to pursue a master’s degree. So that’s why I’m here :) Here is my Linkedin profile"
+  },
+  {
+    "objectID": "assignment1.html#garbage-data-and-what-to-do-about-them-by-jim-kloet",
+    "href": "assignment1.html#garbage-data-and-what-to-do-about-them-by-jim-kloet",
+    "title": "1  Assignment 1",
+    "section": "3.1 Garbage Data, And What To Do About Them by Jim Kloet",
+    "text": "3.1 Garbage Data, And What To Do About Them by Jim Kloet\nThis video is about bad data. According to video bad data is the data that cannot be used for analysis or decision making. It identifies the challenges that you face while dealing with garbage data and suggest a framework to examine the bad data. Here are the steps: 1. Identify the garbage data: They are not usefull for the things you want to do, but maybe they are usefull for other stuff. You need to decide. If you chose none of them, you can destroy it. 2. Identify the costs of garbage data: Some costs are unavoidable and some costs are avoidable, but these can be catastrophic. 3. Take action when you see garbage data: There are options like being honest to your stakehoulders and being emphatatic to your stakehoulders to continue to have stakehoulders."
+  },
+  {
+    "objectID": "assignment1.html#creating-your-career-with-r-data-science-based-jobs",
+    "href": "assignment1.html#creating-your-career-with-r-data-science-based-jobs",
+    "title": "1  Assignment 1",
+    "section": "4.1 1-Creating your career with R – data science based jobs!",
+    "text": "4.1 1-Creating your career with R – data science based jobs!\nIt indicates that your industry and geographical location are the crucial factors that affect your career. That’s why a person who wants to improve modern data analytics skills like Hadoop, Weka, Natural Language Processing or Machine Learning should be in the countries that is open to new things. However, if you are living in a conservative country, SQL helps you to find a job. It says that R is the best way to start data based career and it should be supported by some other programs like SQL and Hadoop.\nPost Link:"
+  },
+  {
+    "objectID": "assignment1.html#top-job-boards-for-r-users-to-take-your-career-to-the-next-level",
+    "href": "assignment1.html#top-job-boards-for-r-users-to-take-your-career-to-the-next-level",
+    "title": "1  Assignment 1",
+    "section": "4.2 2-Top Job Boards for R users to take your career to the next level!",
+    "text": "4.2 2-Top Job Boards for R users to take your career to the next level!\nThe post says that R is one of the most important programming languages for Data Science applications. According to post, R is used for data manipulation, business analytics, machine learning algorithms and data visualization techniques. Here are some job boards that offers jobs in the fields of data science with R programming skills: R-users.com Dice CareerBuilder LinkedIn Indeed Monster Naukri Timesjobs\nPost Link:"
+  },
+  {
+    "objectID": "assignment1.html#three-different-ways-in-how-to-store-your-datasets-in-r",
+    "href": "assignment1.html#three-different-ways-in-how-to-store-your-datasets-in-r",
+    "title": "1  Assignment 1",
+    "section": "4.3 3- Three Different Ways in How to Store Your Datasets in R",
+    "text": "4.3 3- Three Different Ways in How to Store Your Datasets in R\ndata.frame, data.table and data_frame are the common ways to store data in R.\ndata.frame is an internal package that is already in your computer. The drawback about data.frame is that strings are imported as factor. If you look at the example below, you can see the Names and Classes columns are imported as factor. Example:\n\nmydf = data.frame(Names = c(\"Paul\", \"Kim\", \"Nora\", \"Sue\", \"Paul\", \"Kim\"),\n                  Classes = c(\"A\", \"A\", \"B\", \"B\", \"B\", \"C\"),\n                  Points = rnorm(2)) \nmydf\n\n  Names Classes    Points\n1  Paul       A 0.5236442\n2   Kim       A 0.4496056\n3  Nora       B 0.5236442\n4   Sue       B 0.4496056\n5  Paul       B 0.5236442\n6   Kim       C 0.4496056\n\nsapply(mydf, class)\n\n      Names     Classes      Points \n\"character\" \"character\"   \"numeric\" \n\n\ndata.table saves time and helps to reduce errors because it is manipulated with less code and function calls. It has own structure like SQL. Example:\n\nlibrary(data.table)\nmytable = data.table(Names = c(\"Paul\", \"Kim\", \"Nora\", \"Sue\", \"Paul\", \"Kim\"),\n                  Classes = c(\"A\", \"A\", \"B\", \"B\", \"B\", \"C\"),\n                  Points = rnorm(2)) \nmytable \n\n   Names Classes    Points\n1:  Paul       A 0.9237846\n2:   Kim       A 0.4828936\n3:  Nora       B 0.9237846\n4:   Sue       B 0.4828936\n5:  Paul       B 0.9237846\n6:   Kim       C 0.4828936\n\nsapply(mytable, class)\n\n      Names     Classes      Points \n\"character\" \"character\"   \"numeric\" \n\n\nIf you are using data_frame, you need columns of equal length. If not so, you will get an error messagge. Example:\n\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:data.table':\n\n    between, first, last\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nmy_df = data_frame(Names = c(\"Paul\", \"Kim\", \"Nora\", \"Sue\", \"Paul\", \"Kim\"),\n                  Classes = c(\"A\", \"A\", \"B\", \"B\", \"B\", \"C\"),\n                  Points = rnorm(6)) \n\nWarning: `data_frame()` was deprecated in tibble 1.1.0.\nℹ Please use `tibble()` instead.\n\nmy_df                  \n\n# A tibble: 6 × 3\n  Names Classes Points\n  <chr> <chr>    <dbl>\n1 Paul  A       -0.459\n2 Kim   A       -0.745\n3 Nora  B        1.14 \n4 Sue   B        0.689\n5 Paul  B        0.611\n6 Kim   C        0.469\n\nsapply(my_df, class)\n\n      Names     Classes      Points \n\"character\" \"character\"   \"numeric\" \n\n\nPost Link:"
   }
 ]
