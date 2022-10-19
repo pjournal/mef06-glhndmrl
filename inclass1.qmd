@@ -1,0 +1,48 @@
+---
+title: "In Class Exercise 1"
+date: "2022-10-19"
+output: html_document
+---
+
+```{r, message=FALSE}
+library(tidyverse)
+library(nycflights13)
+```
+
+
+```{r}
+planes %>% glimpse()
+```
+
+## The number of planes according to their manufacturers.
+
+```{r}
+planes %>% 
+  group_by(manufacturer) %>% 
+  summarise(count=n()) %>% 
+  arrange(manufacturer) %>% 
+  print(n=35)
+```
+
+
+
+## Max engine numbers group by years.
+```{r}
+planes %>%
+  group_by(year) %>%
+  filter(duplicated(year)) %>%
+  arrange(year) %>%
+  mutate("max_engine_num"=max(engines)) %>%
+  summarise(max_engine_num=paste0(unique(max_engine_num),collapse=',')) %>%
+  print(n=39)
+```
+
+## Total plane count per engines.
+```{r}
+planes %>%
+  group_by(engines) %>%
+  mutate("average_engine_nums"=mean(engines, 1)) %>%
+  count(average_engine_nums)
+```
+
+

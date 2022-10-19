@@ -94,6 +94,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./inclass1.html" rel="next">
 <link href="./index.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -184,6 +185,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <a href="./assignment1.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Assignment 1</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./inclass1.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">In Class Exercise 1</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -266,13 +272,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>                  <span class="at">Points =</span> <span class="fu">rnorm</span>(<span class="dv">2</span>)) </span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>mydf</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>  Names Classes    Points
-1  Paul       A 0.5267003
-2   Kim       A 0.8745825
-3  Nora       B 0.5267003
-4   Sue       B 0.8745825
-5  Paul       B 0.5267003
-6   Kim       C 0.8745825</code></pre>
+<pre><code>  Names Classes     Points
+1  Paul       A -1.7363297
+2   Kim       A -0.3631811
+3  Nora       B -1.7363297
+4   Sue       B -0.3631811
+5  Paul       B -1.7363297
+6   Kim       C -0.3631811</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sapply</span>(mydf, class)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -289,12 +295,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>mytable </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   Names Classes     Points
-1:  Paul       A -0.3794780
-2:   Kim       A -0.4596394
-3:  Nora       B -0.3794780
-4:   Sue       B -0.4596394
-5:  Paul       B -0.3794780
-6:   Kim       C -0.4596394</code></pre>
+1:  Paul       A  0.3619224
+2:   Kim       A -1.1552994
+3:  Nora       B  0.3619224
+4:   Sue       B -1.1552994
+5:  Paul       B  0.3619224
+6:   Kim       C -1.1552994</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sapply</span>(mytable, class)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -312,14 +318,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>my_df                  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 6 × 3
-  Names Classes  Points
-  &lt;chr&gt; &lt;chr&gt;     &lt;dbl&gt;
-1 Paul  A       -0.231 
-2 Kim   A       -1.92  
-3 Nora  B        0.212 
-4 Sue   B       -1.25  
-5 Paul  B       -0.0941
-6 Kim   C        0.452 </code></pre>
+  Names Classes Points
+  &lt;chr&gt; &lt;chr&gt;    &lt;dbl&gt;
+1 Paul  A       -1.83 
+2 Kim   A        1.02 
+3 Nora  B        0.132
+4 Sue   B        1.79 
+5 Paul  B        2.17 
+6 Kim   C       -1.09 </code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sapply</span>(my_df, class)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -439,6 +445,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./inclass1.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">In Class Exercise 1</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->
