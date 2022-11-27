@@ -9,6 +9,7 @@ This application shows number of people of top 5 nationalites according to chose
 Here is [my shiny app](https://gulhandemireldilek.shinyapps.io/students_nationalities/)
 
 Here is the command line:
-```{r}
-shiny::runGitHub("pjournal/mef06-glhndmrl",subdir="Foreign_Students_by_Nationality_Homework/")
+```{r, eval = FALSE}
+shiny::runGitHub("pjournal/mef06-glhndmrl",
+                 subdir="Foreign_Students_by_Nationality_Homework/")
 ```
