@@ -1,0 +1,14 @@
+---
+title: "Shiny Assignment - Foreign Students by Nationality"
+date: "2022-11-27"
+output: html_document
+---
+
+This application shows number of people of top 5 nationalites according to chosen university.
+
+Here is [my shiny app](https://gulhandemireldilek.shinyapps.io/students_nationalities/)
+
+Here is the command line:
+```{r}
+shiny::runGitHub("pjournal/mef06-glhndmrl",subdir="Foreign_Students_by_Nationality_Homework/")
+```
