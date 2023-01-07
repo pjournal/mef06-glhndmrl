@@ -26,3 +26,6 @@ Interaction to online auction platforms increased 6% using email campaigns
 
 Revenue assign increased 6% from email marketing
 
+## Source:
+
+Here is the [link](https://www.gurobi.com/case_studies/emesa-marketing-campaign-optimization/) of my source.
