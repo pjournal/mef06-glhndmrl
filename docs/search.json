@@ -61,5 +61,26 @@
     "title": "3  Shiny Assignment - Foreign Students by Nationality",
     "section": "",
     "text": "Here is my shiny app\nHere is the command line:\n\nshiny::runGitHub(\"pjournal/mef06-glhndmrl\",\n                 subdir=\"Foreign_Students_by_Nationality_Homework/\")"
+  },
+  {
+    "objectID": "OR_assignment.html",
+    "href": "OR_assignment.html",
+    "title": "4  OR_assignment",
+    "section": "",
+    "text": "Emase is an e-commerce company which attract thousands of customers to participate in auctions of a wide array of physical products and leisure experiences such as vacations, spa, zoo, theme park packages, event tickets, and restaurant reservations.\nCompany had problems about timing and personalization. They send e-mails to customers in their ways but is was a manual process. It was time-consuming, and ineffective. E-mails need to be more relevant to indivual users. That’s why they decided to develop an automated, mathematical optimization tool to handle its email marketing campaigns."
+  },
+  {
+    "objectID": "OR_assignment.html#the-solution-automation-and-optimization-of-the-email-marketing-process",
+    "href": "OR_assignment.html#the-solution-automation-and-optimization-of-the-email-marketing-process",
+    "title": "4  OR_assignment",
+    "section": "4.2 The Solution: Automation and Optimization of the Email Marketing Process",
+    "text": "4.2 The Solution: Automation and Optimization of the Email Marketing Process\nThey automate email marketing process and optimize the timing and personalization of the emails. Mathematical optimization was selected as the advanced analytics technology of choice for this application because of its flexibility and robustness.\nEach user’s unique auction bidding history helps them to determine which products to showcase.\nEach user’s personal contact preferences helps them to decide how many email users want to receive."
+  },
+  {
+    "objectID": "OR_assignment.html#results",
+    "href": "OR_assignment.html#results",
+    "title": "4  OR_assignment",
+    "section": "4.3 Results:",
+    "text": "4.3 Results:\nNumber of sent emails increased 5%\nNumber of emails open by customers increased 5%\nInteraction to online auction platforms increased 6% using email campaigns\nRevenue assign increased 6% from email marketing"
   }
 ]

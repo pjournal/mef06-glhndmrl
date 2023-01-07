@@ -1,0 +1,28 @@
+---
+title: "OR_assignment"
+output: html_document
+---
+## Emase – Email Marketing Campaign Optimization
+
+Emase is an e-commerce company which attract thousands of customers to participate in auctions of a wide array of physical products and leisure experiences such as vacations, spa, zoo, theme park packages, event tickets, and restaurant reservations.
+
+Company had problems about timing and personalization. They send e-mails to customers in their ways but is was a manual process. It was time-consuming, and ineffective. E-mails need to be more relevant to indivual users. That’s why they decided to develop an automated, mathematical optimization tool to handle its email marketing campaigns. 
+
+## The Solution: Automation and Optimization of the Email Marketing Process
+
+They automate email marketing process and optimize the timing and personalization of the emails. Mathematical optimization was selected as the advanced analytics technology of choice for this application because of its flexibility and robustness.
+
+Each user’s unique auction bidding history helps them to determine which products to showcase. 
+
+Each user’s personal contact preferences helps them to decide how many email users want to receive.
+
+## Results: 
+
+Number of sent emails increased 5%
+
+Number of emails open by customers increased 5%
+
+Interaction to online auction platforms increased 6% using email campaigns
+
+Revenue assign increased 6% from email marketing
+
